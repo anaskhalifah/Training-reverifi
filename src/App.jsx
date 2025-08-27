@@ -6,7 +6,7 @@ import Header from './Header/Header'
 import Profile from './Profile/Profile'
 import Achievements from './Achievements/Achievements'
 import Footer from './Footer/Footer'
-
+import Listing from './Listing/Listing'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -15,6 +15,7 @@ function App() {
     <Header/>
     <Profile/>
     <Achievements/>
+    <Listing></Listing>
     <Footer/>
 
     </>
