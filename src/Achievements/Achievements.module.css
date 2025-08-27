@@ -1,0 +1,124 @@
+.cardGrid {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding: 40px;
+    justify-content: center;
+
+}
+
+.AchievementsSection {
+    font-family: "Montserrat", sans-serif;
+
+}
+.instagramIcon{
+    background-color: #B7CF53;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 50px 20px 0 auto;
+}
+.instagramIcon svg{
+margin:10px;
+}
+.card {
+    width: 285px;
+    height: 238px;
+    background-color: #FAFAFA;
+    border: 1px solid #EBEBEB;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.cardImg {
+    width: 127px;
+    height: 92px;
+    /* fixed height for image */
+    object-fit: cover;
+    margin: auto;
+    margin-top: 2.5rem;
+}
+
+.cardContent {
+    flex: 1;
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 89px;
+    /* fixed height for text area */
+    margin-top: 5px;
+}
+
+.cardTitle {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 4px;
+    text-align: center;
+}
+
+.cardDate {
+    font-size: 16px;
+    color: #6F7075;
+    margin: 10px 0;
+    text-align: center;
+
+}
+
+.achievementsTitle {
+    margin-left: 12rem;
+    margin-top: 80px;
+    font-weight: 600;
+}
+
+.pointsElement {
+    width: 142px;
+    height: 46px;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.headerOfAchievements {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
+}
+
+.badgeElement {
+    width: 141px;
+    height: 46px;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.achievementAndBadgeContainer {
+    margin-top: 80px;
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+}

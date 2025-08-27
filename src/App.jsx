@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './Header/Header'
 import Profile from './Profile/Profile'
+import Achievements from './Achievements/Achievements'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,6 +13,7 @@ function App() {
     <>
     <Header></Header>
     <Profile></Profile>
+    <Achievements></Achievements>
 
     </>
   )
