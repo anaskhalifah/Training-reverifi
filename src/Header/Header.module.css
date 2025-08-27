@@ -1,0 +1,122 @@
+    .headerContainer {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 0 24px;
+      color: white;
+      height: 72px;
+    }
+
+    /* Left navigation */
+    .navLeft a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .navLeft a:hover {
+      color: gray;
+    }
+
+    /* Center logo */
+    .logo {
+      font-size: 36px;
+      font-weight: 700;
+      color: #B9D153;
+      font-family: "Inter", sans-serif;
+    }
+
+    /* Right side */
+    .navRight {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .navRight a {
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .notification {
+      position: relative;
+      cursor: pointer;
+      border: 1px white solid;
+      border-bottom: 0;
+      border-top: 0;
+      padding: 26px;
+      margin-left: 40px;
+    }
+
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .user img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+    }
+
+
+
+    /**/
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdownBtn {
+      border: none;
+      background: transparent;
+      padding: 8px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+
+
+    .dropdownBtn .icon {
+      width: 15px;
+      height: 15px;
+      transition: transform 0.2s ease;
+    }
+
+    /* Rotate arrow when open */
+    .dropdownBtn.open .icon {
+      transform: rotate(180deg);
+    }
+
+    .dropdownMenu {
+      position: absolute;
+      right: 0;
+      margin-top: 8px;
+      width: 160px;
+      background: #222222;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+
+    .dropdownMenu ul {
+      list-style: none;
+      margin: 0;
+      padding: 4px 0;
+    }
+
+    .dropdownMenu li {
+      padding: 8px 12px;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .dropdownMenu li:hover {
+      background: #3f3f3fe0;
+    }
