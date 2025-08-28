@@ -31,7 +31,9 @@ export default function Profile() {
             </div>
             {/* Right Column */}
             <div className={styles.right}>
-                <h2 className={styles.name}>Jacob Jones</h2>
+                <h2 className={styles.name}>Jacob Jones <span className={styles.searchIcon}>
+                    <img src="/src/assets/searchIcon.png" alt="" /></span>
+                </h2>
                 <p className={styles.subtitle}>Lender/Mortgage <div>NMLS   #068543894</div></p>
 
                 {/* About */}
