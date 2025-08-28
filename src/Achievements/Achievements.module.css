@@ -121,6 +121,7 @@ margin:10px;
     display: flex;
     justify-content: start;
     gap: 10px;
+    margin-right: 4.8rem;
 }
 
 @media (max-width: 1200px) {
