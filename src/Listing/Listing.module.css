@@ -1,121 +1,153 @@
 .section {
-  padding: 40px 20px;
+    padding: 40px 20px;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 30px;
 }
 
 .title {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 20px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-left: 12rem;
+    margin-top: 80px;
+    font-weight: 600;
 }
 
 .sliderWrapper {
-  display: flex;
-  align-items: center;
-  position: relative;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-evenly;
+
 }
 
 .arrow {
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  padding: 10px;
-  color: #333;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
-.arrow:disabled {
-  color: #aaa;
-  cursor: not-allowed;
-}
 
 .slider {
-  overflow: hidden;
-  width: calc(392px * 3 + 40px); /* 3 cards visible + spacing */
+    overflow: hidden;
+    width: calc(392px * 3 + 200px);
+    /* 3 cards visible + spacing */
+    padding: 12px;
 }
 
 .cardsContainer {
-  display: flex;
-  gap: 20px;
-  transition: transform 0.4s ease;
+    display: flex;
+    gap: 30px;
+    transition: transform 0.4s ease;
 }
 
 .card {
-  width: 392px;
-  height: 494px;
-  background: #fff;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column;
+    width: 392px;
+    height: auto;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .image {
-  width: 100%;
-  height: 257px;
-  object-fit: cover;
+    width: 100%;
+    height: 257px;
+    object-fit: cover;
 }
 
 .price {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 12px 16px 4px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 12px 16px 4px;
+    color: #b7cf53;
+    display: flex;
+    justify-content: space-between;
 }
 
 .days {
-  font-size: 14px;
-  color: #666;
-  margin: 0 16px 4px;
+    font-size: 16px;
+    color: #979797;
+    margin: 0 16px 4px;
 }
 
 .sale {
-  color: #b9d153;
-  font-weight: 600;
-  margin: 0 16px 12px;
+    color: black;
+    font-weight: 500;
+    margin: 16px 16px 12px;
+    font-size: 16px;
 }
 
 .stats {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 16px 12px;
-  font-size: 14px;
-  color: #444;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 16px 12px;
+    font-size: 14px;
+    color: #6f7075;
 }
 
-.stats span {
-  display: flex;
-  align-items: center;
-  gap: 6px;
+.stats div {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.cardIcons {
+    margin-left: 5px;
 }
 
 .listFooter {
-  margin-top: auto;
-  padding: 12px 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid #eee;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actions {
+    display: flex;
 }
 
 .actions span {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  margin-right: 12px;
-  font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-right: 12px;
+    font-size: 14px;
 }
 
 .viewBtn {
-  background: #b9d153;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 6px;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  color: #fff;
+    background: #b9d153;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 35px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    width: 140px;
+    height: 36px;
 }
 
 .viewBtn:hover {
-  background: #a0b83f;
+    background: #a0b83f;
+}
+
+.heartIcon {
+    padding: 4px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    background-color: #f4f4f4;
+    color: #979797;
+}
+
+.shareIcon {
+    padding: 6px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    background-color: #f4f4f4;
+    color: #979797;
+    margin-left: 5px;
 }
