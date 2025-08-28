@@ -3,6 +3,8 @@ import styles from "./Profile.module.css";
 import { CiHeart } from "react-icons/ci";
 import { HiOutlineShare } from "react-icons/hi";
 import { BiLogoLinkedin } from "react-icons/bi";
+import { PiPhoneFill } from "react-icons/pi";
+import { FaInstagram } from "react-icons/fa6";
 
 export default function Profile() {
     return (<>
@@ -22,9 +24,12 @@ export default function Profile() {
                     <button className={styles.contactBtn}>Contact</button>
 
                     <div className={styles.socials}>
-                        <FaFacebook size={42} />
-                        <span className={styles.youtubeIcon}><FaYoutube size={30} color="white"/></span>
-                        <span className={styles.linkedinIcon}><BiLogoLinkedin size={30} color="white"/></span>
+                        <span className={styles.facebookIcon}><FaFacebook size={42} /></span>
+                        <span className={styles.youtubeIcon}><FaYoutube size={30} color="white" /></span>
+                        <span className={styles.linkedinIcon}><BiLogoLinkedin size={30} color="white" /></span>
+                        <span className={styles.phoneIcon}><PiPhoneFill size={30} color="white" /></span>
+                        <span className={styles.instaIcon}><FaInstagram size={30} color="white" /></span>
+
 
                     </div>
                 </div>
@@ -34,7 +39,11 @@ export default function Profile() {
                 <h2 className={styles.name}>Jacob Jones <span className={styles.searchIcon}>
                     <img src="/src/assets/searchIcon.png" alt="" /></span>
                 </h2>
-                <p className={styles.subtitle}>Lender/Mortgage <div>NMLS   #068543894</div></p>
+                <p className={styles.subtitle}>Lender/Mortgage <div>
+                    <span className={styles.subtitleText}>NMLS   #068543894 </span>
+                        <span className={styles.heartIconMobile}><CiHeart size={25} /> </span>
+                        <span className={styles.shareIconMobile}><HiOutlineShare size={20} /></span>
+                    </div></p>
 
                 {/* About */}
                 <div className={styles.about}>
@@ -62,10 +71,10 @@ export default function Profile() {
                     </div>
                     <div>
                         <h4>Email</h4>
-                        <p>jacob.jones@example.com                    
+                        <p>jacob.jones@example.com
                             <span className={styles.heartIcon}><CiHeart size={25} /> </span>
-                             <span className={styles.shareIcon}><HiOutlineShare size={20}/></span>
-                       
+                            <span className={styles.shareIcon}><HiOutlineShare size={20} /></span>
+
                         </p>
                     </div>
 

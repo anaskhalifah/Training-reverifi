@@ -23,11 +23,13 @@
     border-radius: 35px;
     object-fit: cover;
 }
-.searchIcon{
+
+.searchIcon {
     position: relative;
     top: 1.5rem;
     left: 1rem;
 }
+
 .contactBtn {
     padding: 10px 20px;
     border: none;
@@ -63,7 +65,7 @@
 .right {
     flex: 1;
     margin-top: 70px;
-        max-width: 800px;
+    max-width: 800px;
 
 }
 
@@ -83,18 +85,20 @@
 .about {
     margin-bottom: 30px;
 }
-.aboutText{
+
+.aboutText {
     margin-top: 5px;
     font-size: 16px;
     color: #6F7075;
     font-family: "Montserrat", sans-serif;
 }
+
 .about h4 {
     margin-bottom: 8px;
-    color:#B7CF53;
+    color: #B7CF53;
     font-size: 20px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
 }
 
 .infoGrid {
@@ -107,8 +111,8 @@
     margin: 0;
     font-size: 20px;
     color: #B7CF53;
-      font-family: "Montserrat", sans-serif;
-font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
 }
 
 .infoGrid p {
@@ -116,45 +120,224 @@ font-weight: 600;
     font-size: 16px;
     font-weight: 500;
     color: #6F7075;
-          font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
 
 }
-.heartIcon{
+
+.heartIcon {
     position: relative;
     left: 25%;
-        padding: 4px;
+    padding: 4px;
     border-radius: 50%;
     display: inline-flex;
     justify-content: center;
     background-color: #F4F4F4;
 }
-.shareIcon{
+
+.shareIcon {
     position: relative;
     left: 26%;
-    top: -3px;;
-        padding: 6px;
+    top: -3px;
+    padding: 6px;
     border-radius: 50%;
     display: inline-flex;
     justify-content: center;
     background-color: #F4F4F4;
 }
-.linkedinIcon{
+
+.linkedinIcon {
     background-color: #b9d153;
     border-radius: 50%;
     padding: 5px;
-            width: 34px;
+    width: 34px;
     height: 34px;
 }
-.linkedinIcon svg{
-margin-left: 2px;
+
+.linkedinIcon svg {
+    margin-left: 2px;
 }
-.youtubeIcon{
+
+.youtubeIcon {
     background-color: #b9d153;
     border-radius: 50%;
     padding: 5px;
+    width: 34px;
+    height: 34px;
+}
+
+.facebookIcon {
+    background: white;
+    border-radius: 50%;
+    height: 41px;
+    width: 41px;
+}
+
+.youtubeIcon svg {
+    margin: 2px;
+}
+
+.phoneIcon {
+    display: none;
+}
+
+.instaIcon {
+    display: none;
+}
+
+.shareIconMobile {
+    display: none;
+}
+
+.heartIconMobile {
+    display: none;
+}
+
+/*responsiveness*/
+
+@media (max-width: 1200px) {
+    .profileImg {
+        width: 368px;
+        height: 411px;
+    }
+
+    .profileSection {
+        display: block;
+        gap: 90px;
+        background: #ffffff;
+        border-radius: 12px;
+        margin-top: 5rem;
+        padding-left: 0;
+    }
+
+    .socialActions {
+        display: block;
+        align-items: center;
+        position: relative;
+        top: -6.95rem;
+    }
+
+    .socials {
+        display: flex;
+        gap: 16px;
+        color: #b9d153;
+        margin-top: 15px;
+    }
+
+    .contactBtn {
+        margin-left: 3.7rem;
+        width: 149px;
+    }
+
+    .phoneIcon {
+        display: block;
+        background-color: #b9d153;
+        border-radius: 50%;
+        padding: 5px;
         width: 34px;
-    height: 34px;
-}
-.youtubeIcon svg{
-margin: 2px;
+        height: 34px;
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .phoneIcon svg {
+        margin-top: 2px;
+        margin-left: 2px;
+    }
+
+    .instaIcon {
+        display: block;
+        background-color: #b9d153;
+        border-radius: 50%;
+        padding: 5px;
+        width: 34px;
+        height: 34px;
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .instaIcon svg {
+        margin-top: 2px;
+        margin-left: 2px;
+    }
+
+    .linkedinIcon {
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .youtubeIcon {
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .facebookIcon {
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .right {
+        flex: 1;
+        margin-top: 0;
+        padding-top: 0;
+        max-width: 800px;
+
+    }
+
+    .left {
+        height: 440px;
+    }
+
+    .name {
+        text-align: center;
+        margin-left: 2.5rem;
+    }
+
+    .subtitle {
+        text-align: center;
+    }
+
+    .searchIcon {
+        position: relative;
+        top: 0;
+        left: 1rem;
+    }
+
+    .about {
+        padding: 0 40px;
+    }
+
+    .infoGrid {
+        display: block;
+        padding: 0 40px;
+    }
+
+    .infoGrid div {
+        margin-bottom: 25px;
+    }
+
+    .shareIconMobile {
+        position: relative;
+        left: 9%;
+        top: -3px;
+        padding: 6px;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        background-color: #F4F4F4;
+    }
+
+    .heartIconMobile {
+        position: relative;
+        left: 8%;
+        padding: 4px;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        background-color: #F4F4F4;
+    }
+
+    .subtitleText {
+        margin-left: 75px;
+    }
+    .heartIcon, .shareIcon{
+        display: none;
+    }
 }
