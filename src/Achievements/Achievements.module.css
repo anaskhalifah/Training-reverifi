@@ -139,6 +139,7 @@ margin:10px;
 }
 .achievementAndBadgeContainer {
     justify-content: space-evenly;
+        margin-right: 1rem;
 }
   .cardGrid {
     display: grid;
