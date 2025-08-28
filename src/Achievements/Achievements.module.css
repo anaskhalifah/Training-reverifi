@@ -122,3 +122,32 @@ margin:10px;
     justify-content: start;
     gap: 10px;
 }
+
+@media (max-width: 1200px) {
+.instagramIcon{
+    display: none;
+}
+
+.headerOfAchievements {
+    display: block;
+
+}
+.achievementsTitle{
+    margin-left: 0;
+    text-align: center;
+}
+.achievementAndBadgeContainer {
+    justify-content: space-evenly;
+}
+  .cardGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 2px;
+    justify-items: center; 
+  }
+
+  .card {
+    margin-left: 0; 
+    width: 150px;
+  }
+}

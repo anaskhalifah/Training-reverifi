@@ -34,7 +34,7 @@ export default function Achievements() {
             <header><link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" /></header>
-<div className={styles.instagramIcon}><FaInstagram size={40}/></div>
+            <div className={styles.instagramIcon}><FaInstagram size={40} /></div>
 
             <div className={styles.headerOfAchievements}>
                 <h1 className={styles.achievementsTitle}>Achievements</h1>
