@@ -12,12 +12,14 @@ import { PiGarageLight } from "react-icons/pi";
 import { CiHeart } from "react-icons/ci";
 import { HiOutlineShare } from "react-icons/hi";
 import { MdOutlineArrowForwardIos, MdOutlineArrowBackIosNew } from "react-icons/md";
+import { FaCamera } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
 
 export default function Listing() {
     const cards = [
-        { id: 1, img: "/src/assets/Listing/home1.jpg", price: "$450,000", days: 7 },
-        { id: 2, img: "/src/assets/Listing/home2.jpg", price: "$510,000", days: 12 },
-        { id: 3, img: "/src/assets/Listing/home3.jpg", price: "$600,000", days: 2 },
+        { id: 1, img: "/src/assets/Listing/home1.jpg", price: "$450,000", days: 7, available: false },
+        { id: 2, img: "/src/assets/Listing/home2.jpg", price: "$510,000", days: 12, available: true },
+        { id: 3, img: "/src/assets/Listing/home3.jpg", price: "$600,000", days: 2, available: true },
     ];
 
 
@@ -46,7 +48,12 @@ export default function Listing() {
                             {cards.map((card) => (
                                 <div key={card.id} className={styles.card}>
                                     <img src={card.img} alt="Listing" className={styles.image} />
-
+                                    {card.available ? <></> : <img src="/src/assets/Listing/closed.png" className={styles.unavailable}></img>}
+                                    <div><span className={styles.saleText}>Sale</span> <span className={styles.numberOfPhotos}>1 <span className={styles.cameraIcon}><FaCamera /></span></span></div>
+                                     <div className={styles.address}>
+                                        <span className={styles.locationIcon}><FaLocationDot color="#b7cf53"/></span>
+                                        <span className={styles.locationText}> 1234 Elm St, Springfield, IL 62704</span>
+                                    </div>
                                     <div className={styles.price}>
                                         <span>{card.price}</span>
                                         <span>
@@ -58,6 +65,7 @@ export default function Listing() {
                                             </span>
                                         </span>
                                     </div>
+                                   
                                     <div className={styles.days}>
                                         {card.days} days on Reverifi
                                     </div>
