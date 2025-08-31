@@ -181,9 +181,15 @@
 }
 
 .instaIcon {
-    display: none;
+    background-color: #b9d153;
+    border-radius: 50%;
+    padding: 5px;
+    width: 34px;
+    height: 34px;
 }
-
+.instaIcon svg{
+    margin: 2px;
+}
 .shareIconMobile {
     display: none;
 }
