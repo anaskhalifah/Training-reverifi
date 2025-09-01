@@ -1,27 +1,27 @@
 import styles from "./Achievements.module.css";
-
+import {img1,img2,img3,badge,pointsIcon} from '/src/assets/Achievements/index';
 const cards = [
     {
         id: 1,
-        image: "src/assets/Achievements/img1.png",
+        image: img1,
         title: "Card Title 1",
         date: "Jan 12, 2025",
     },
     {
         id: 2,
-        image: "src/assets/Achievements/img2.png",
+        image: img2,
         title: "Card Title 2",
         date: "Feb 3, 2025",
     },
     {
         id: 3,
-        image: "src/assets/Achievements/img3.png",
+        image: img3,
         title: "Card Title 3",
         date: "Mar 8, 2025",
     },
     {
         id: 4,
-        image: "src/assets/Achievements/img1.png",
+        image: img1,
         title: "Card Title 4",
         date: "Apr 21, 2025",
     },
@@ -38,11 +38,11 @@ export default function Achievements() {
                 <h1 className={styles.achievementsTitle}>Achievements</h1>
                 <div className={styles.achievementAndBadgeContainer}>
                     <div className={styles.pointsElement}>
-                        <img src="/src/assets/Achievements/pointsIcon.png" />
+                        <img src={pointsIcon} />
                         <span>3300 Points</span>
                     </div>
                     <div className={styles.badgeElement}>
-                        <img src="/src/assets/Achievements/badge.png" />
+                        <img src={badge} />
                         <span>8 Badges</span>
                     </div>
                 </div>
