@@ -1,5 +1,5 @@
 import { useState } from "react";
-import  facebook  from "../assets/svgIcons/facebook.svg";
+import FacebookIcon from "../svgComponents/facebook/facebook";
 import  youtube from "../assets/svgIcons/youtube.svg";
 import linkedin from "../assets/svgIcons/linkedin.svg";
 import insta from "../assets/svgIcons/insta.svg";
@@ -32,7 +32,7 @@ export default function Profile() {
                         </button>
 
                         <div className={styles.socials}>
-                            <span className={styles.facebookIcon}><img src={facebook} /></span>
+                            <span className={styles.facebookIcon}><FacebookIcon fill="var(--primary-color)" /></span>
                             <span className={styles.youtubeIcon}><img src={youtube} /></span>
                             <span className={styles.linkedinIcon}><img src={linkedin} /></span>
                             <span className={styles.phoneIcon}><img src={phone} /></span>
