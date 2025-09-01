@@ -3,6 +3,8 @@ import Profile from './Profile/Profile'
 import Achievements from './Achievements/Achievements'
 import Footer from './Footer/Footer'
 import Listing from './Listing/Listing'
+import "./colorVariables.css"
+
 function App() {
 
   return (

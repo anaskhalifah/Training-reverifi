@@ -1,11 +1,11 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #FAFAFA;
+      background-color: var(--background-color);
     }
 
     header {
-      background-color: #222222;
+      background-color: var(--secondary-color);
 
     }
 

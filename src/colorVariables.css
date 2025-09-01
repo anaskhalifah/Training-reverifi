@@ -1,0 +1,14 @@
+:root {
+  --primary-color: #b9d153;
+  --secondary-color:#222222;
+  --background-color: #FAFAFA;  
+  --surface-color: #F4F4F4;  
+  --white-color:#FFFFFF;
+  --black-color:#000000;
+  --gray-color:gray;
+  --text-color:#6F7075;
+  --overlay-strong: rgba(0, 0, 0, 0.6);
+  --overlay-light: rgba(0, 0, 0, 0.3);
+  --label-border:#ddd;
+
+}
