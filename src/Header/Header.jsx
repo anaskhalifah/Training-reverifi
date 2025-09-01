@@ -1,6 +1,6 @@
 import { TfiBell } from "react-icons/tfi";
 import { IoPersonSharp } from "react-icons/io5";
-import { FaChevronDown, FaBars } from "react-icons/fa"; 
+import { FaChevronDown } from "react-icons/fa"; 
 import { useState } from "react";
 import styles from "./Header.module.css";
 import { PiList } from "react-icons/pi";
@@ -61,7 +61,6 @@ export default function Header() {
                 </div>
             </div>
 
-            {/* Mobile dropdown menu */}
             {mobileOpen && (
                 <div className={styles.mobileMenu}>
                     <a href="#">Buy</a>

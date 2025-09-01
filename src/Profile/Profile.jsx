@@ -16,7 +16,7 @@ export default function Profile() {
     return (
         <>
             <section className={styles.profileSection}>
-                {/* Left Column */}
+
                 <div className={styles.left}>
                     <img
                         src="src/assets/JacobIMG.jpg"
@@ -39,7 +39,7 @@ export default function Profile() {
                     </div>
                 </div>
 
-                {/* Right Column */}
+
                 <div className={styles.right}>
                     <h2 className={styles.name}>
                         Jacob Jones
@@ -56,7 +56,7 @@ export default function Profile() {
                         </div>
                     </p>
 
-                    {/* About */}
+
                     <div className={styles.about}>
                         <h4>About</h4>
                         <p className={styles.aboutText}>
@@ -65,7 +65,7 @@ export default function Profile() {
                         </p>
                     </div>
 
-                    {/* Grid Info */}
+
                     <div className={styles.infoGrid}>
                         <div>
                             <h4>Language</h4>
@@ -91,7 +91,6 @@ export default function Profile() {
                 </div>
             </section>
 
-            {/* Modal */}
             {isModalOpen && (
                 <div className={styles.modalOverlay}>
                     <div className={styles.modal}>

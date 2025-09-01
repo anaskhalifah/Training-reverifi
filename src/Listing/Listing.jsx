@@ -1,11 +1,8 @@
-import { useState } from "react";
 import styles from "./Listing.module.css";
 import {
     FaBed,
     FaBath,
-    FaRulerCombined,
     FaHeart,
-    FaRegCommentDots,
 } from "react-icons/fa";
 import { TbMessages } from "react-icons/tb";
 import { PiGarageLight } from "react-icons/pi";

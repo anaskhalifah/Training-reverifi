@@ -18,12 +18,10 @@ export default function Footer() {
             </div>
             <div className={styles.footerContainer}>
 
-                {/* Column 1 */}
                 <div className={styles.logo}>
                     <h1>reverifi</h1>
                 </div>
 
-                {/* Column 2 */}
                 <div className={styles.column}>
                     <h3 className={styles.title}>Company</h3>
                     <ul>
@@ -35,7 +33,6 @@ export default function Footer() {
                     </ul>
                 </div>
 
-                {/* Column 3 */}
                 <div className={styles.column}>
                     <h3 className={styles.title}>Contact</h3>
                     <ul>
@@ -44,14 +41,8 @@ export default function Footer() {
                     </ul>
                 </div>
 
-                {/* Column 4 */}
                 <div className={styles.column}>
                     <h3 className={styles.title}>Subscribe to our newsletter</h3>
-                    {/* <ul className={styles.socials}>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">YouTube</a></li>
-            <li><a href="#">LinkedIn</a></li>
-          </ul> */}
                     <div className={styles.newsletter}>
                         <input placeholder="Enter email address" />
                         <button>Subscribe</button>

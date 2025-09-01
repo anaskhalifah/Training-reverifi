@@ -1,5 +1,4 @@
 import styles from "./Achievements.module.css";
-import { FaInstagram } from "react-icons/fa";
 
 const cards = [
     {
