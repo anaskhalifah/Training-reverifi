@@ -1,11 +1,13 @@
 import { useState } from "react";
-import { FaFacebook, FaYoutube } from "react-icons/fa";
+import  facebook  from "../assets/svgIcons/facebook.svg";
+import  youtube from "../assets/svgIcons/youtube.svg";
+import linkedin from "../assets/svgIcons/linkedin.svg";
+import insta from "../assets/svgIcons/insta.svg";
 import styles from "./Profile.module.css";
+import phone from "../assets/svgIcons/phone.svg";
 import { CiHeart } from "react-icons/ci";
 import { HiOutlineShare } from "react-icons/hi";
-import { BiLogoLinkedin } from "react-icons/bi";
-import { PiPhoneFill } from "react-icons/pi";
-import { FaInstagram } from "react-icons/fa6";
+
 
 export default function Profile() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -30,11 +32,11 @@ export default function Profile() {
                         </button>
 
                         <div className={styles.socials}>
-                            <span className={styles.facebookIcon}><FaFacebook size={42} /></span>
-                            <span className={styles.youtubeIcon}><FaYoutube size={30} color="white" /></span>
-                            <span className={styles.linkedinIcon}><BiLogoLinkedin size={30} color="white" /></span>
-                            <span className={styles.phoneIcon}><PiPhoneFill size={30} color="white" /></span>
-                            <span className={styles.instaIcon}><FaInstagram size={30} color="white" /></span>
+                            <span className={styles.facebookIcon}><img src={facebook} /></span>
+                            <span className={styles.youtubeIcon}><img src={youtube} /></span>
+                            <span className={styles.linkedinIcon}><img src={linkedin} /></span>
+                            <span className={styles.phoneIcon}><img src={phone} /></span>
+                            <span className={styles.instaIcon}><img src={insta} /></span>
                         </div>
                     </div>
                 </div>
